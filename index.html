@@ -1,12 +1,304 @@
 <!DOCTYPE html>
 <html>
-  <head><title>Falcon Construction</title></head>
-  <style>
-    html, body, * {
-      background: black;
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+  <meta name="description" content="">
+  <title>Falcon Construction</title>
+  <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
+  <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="preload" as="style" href="assets/mb/css/mbr-additional.css">
+  <link rel="stylesheet" href="assets/mb/css/mbr-additional.css" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <script src="https://use.typekit.net/mez3arr.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    try {
+      Typekit.load();
     }
-  </style>
+    catch (e) {}
+  </script>
+  <script>
+    // When the user scrolls down 20px from the top of the document, slide down the navbar
+    window.onscroll = function () {
+      scrollFunction()
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        document.getElementById("customnav").style.top = "0";
+        document.getElementById("customnav").style.boxShadow = "0px 3px 0px -1px rgba(245,245,245,1)";
+      }
+      else {
+        document.getElementById("customnav").style.top = "-100px";
+        document.getElementById("customnav").style.boxShadow = "0px 3px 0px -1px rgb(255, 255, 255)";
+      }
+    }
+  </script>
+  <script>
+    // MDB Lightbox Init
+    $(document).on('click', '[data-toggle="lightbox"]', function (event) {
+      event.preventDefault();
+      $(this).ekkoLightbox();
+    });
+  </script>
+  <link href="slider.css" rel="stylesheet" type="text/css">
+
   <body>
-    
+    <nav id="customnav" class="mb-1 navbar navbar-expand-lg navbar-dark info-color">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="assets/images/falcon-logo-default.png"></img>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4" aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"> <a class="nav-link" href="#aboutus"> About</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="#services-q"> Services</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="#gallerysection"> Gallery</a> </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <nav id="innernav" class="mb-1 navbar navbar-expand-lg navbar-dark info-color">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="assets/images/falcon-logo-white.png"></img>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4" aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent-4">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"> <a class="nav-link" href="#aboutus"> About</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="#services-q"> Services</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="#gallerysection"> Gallery</a> </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <section class="topSection">
+        <!--Carousel Wrapper-->
+        <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+          <!--Indicators-->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-2" class="active indicator-custom-class" data-slide-to="0"></li>
+            <li data-target="#carousel-example-2" class="indicator-custom-class" data-slide-to="1"></li>
+            <li data-target="#carousel-example-2" class="indicator-custom-class" data-slide-to="2"></li>
+          </ol>
+          <ol class="carousel-indicators indicator-left"> <a href="#aboutus" class="active indicator-custom-class mbr-text mbr-fonts-style display-7 carousel-link">Discover Falcon Construction &darr;</a> </ol>
+          <!--/.Indicators-->
+          <!--Slides-->
+          <div class="carousel-inner mbr-section-title mbr-fonts-style mb-4 display-2" role="listbox">
+            <div class="carousel-item active">
+              <div class="view"> <img class="topcapimg" src="assets/images/slide-1-ls.png" alt="First slide"> </div>
+              <div class="carousel-caption"> Create the Dream Home You’ve Always Envisioned </div>
+            </div>
+            <div class="carousel-item ">
+              <div class="view"> <img class="topcapimg" src="assets/images/slide-2-ls.png" alt="First slide"> </div>
+              <div class="carousel-caption">Quality Workmanship For Every Budget</div>
+            </div>
+            <div class="carousel-item ">
+              <div class="view"> <img class="topcapimg" src="assets/images/slide-3-ls.png" alt="First slide"> </div>
+              <div class="carousel-caption"> Serving the Ottawa Region For Over 30 Years </div>
+            </div>
+            <!--/.Slides-->
+          </div>
+          <!--/.Carousel Wrapper-->
+      </section>
+      </div>
+      <section class="content5 cid-segLtQ8uRb" id="aboutus" style="position: relative; top: -30px;">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-lg-6">
+              <h4 class="mbr-section-title mbr-fonts-style mb-4 display-2">
+                    <strong>About Us</strong>
+                </h4>
+              <p class="mbr-text mbr-fonts-style display-7" style="position: relative;top: -15px;"> Welcome to Falcon Construction. Serving Ottawa since 1989, we take pride in our quality craftsmanship, creating timeless aesthetics for your home or business.</p> <a href="#" style="display: none;" class="btn display-7 outline-button">Discover All Products</a> </div>
+          </div>
+        </div>
+        <div style="margin-top:-20px; display:none;" class="slider w-slider" data-animation="slide" data-duration="300" data-easing="ease-in-quad" data-infinite="1">
+          <div class="w-slider-arrow-left">
+            <div class="w-icon-slider-left"></div>
+          </div>
+          <div class="w-slider-arrow-right">
+            <div class="w-icon-slider-right"></div>
+          </div>
+          <br>
+          <br>
+          <div class="mash w-slider-mask">
+            <div class="slide w-slide">
+              <div class="_1 carddiv"></div>
+              <div class="carddiv first"></div>
+            </div>
+            <div class="slide w-slide">
+              <div class="_2 carddiv"></div>
+            </div>
+            <div class="slide w-slide">
+              <div class="_3 carddiv"></div>
+            </div>
+            <div class="slide w-slide">
+              <div class="_4 carddiv"></div>
+              <div class="carddiv last"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="container-fluid">
+        <section class="testimonials1 cid-segNaqOTNA" id="services-q" style="background: #f8f8f8">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-12 col-md-6">
+                <div class="image-wrapper"> <img src="assets/images/architecture.jpeg" alt="Mobirise"> </div>
+              </div>
+              <div class="col-12 col-md">
+                <div class="text-wrapper">
+                  <h3 class="mbr-section-title mbr-fonts-style mb-4 display-2" style="padding-bottom: 100px; position: relative; top: -40px;">
+                    <strong>Our Services </strong>
+                </h3>
+                  <h3 class="mbr-section-title mbr-fonts-style mb-4 display-2">
+                    <strong>Flooring Installation </strong>
+                </h3>
+                  <p class="mbr-text mbr-fonts-style mb-4 display-7">Whether you are looking for solid hardwood, laminate or engineered flooring, we’ve got you covered. Our team of experts handle all aspects of the installation, from delivery to waste removal, leaving you stress free through the entire project.</p>
+                </div>
+                <div class="text-wrapper">
+                  <h3 class="mbr-section-title mbr-fonts-style mb-4 display-2">
+                    <strong>Stairs &amp; Railings  </strong>
+                </h3>
+                  <p class="mbr-text mbr-fonts-style mb-4 display-7">Transform your dream staircase into the focal point of your home. Traditional, modern or contemporary, we make sure to give your home the look it deserves.</p>
+                </div>
+                <div class="text-wrapper">
+                  <h3 class="mbr-section-title mbr-fonts-style mb-4 display-2">
+                    <strong>Sanding &amp; Refinishing  </strong>
+                </h3>
+                  <p class="mbr-text mbr-fonts-style mb-4 display-7">Refinishing your existing hardwood is one of the best ways to drastically improve the look and value of your home. We understand your floors can take a beating over the years, which is why we help get your floors looking like they once did.</p>
+                </div>
+                <div class="text-wrapper">
+                  <h3 class="mbr-section-title mbr-fonts-style mb-4 display-2">
+                    <strong>Commercial </strong>
+                </h3>
+                  <p class="mbr-text mbr-fonts-style mb-4 display-7">At Falcon Construction we undertake all aspects of commercial projects. With years of experience, we specialize in excellent client service, catering to the needs of every job.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <section class="testimonials1 cid-segNpDQTuR" id="testimonials1-r">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-12 col-md-6">
+              <div class="image-wrapper"> <img src="assets/images/8q5K6FJfLBo.jpg" alt=""> </div>
+            </div>
+            <div class="col-12 col-md">
+              <div class="text-wrapper">
+                <h3 class="mbr-section-title mbr-fonts-style mb-4 display-2">
+                    <strong>Our Past Work </strong>
+                </h3>
+                <p class="mbr-text mbr-fonts-style mb-4 display-7"> We at Falcon Construction have completed numerous commercial projects over the years. Ranging from schools to embassies, retail stores to condominiums, and restaurants to churches.</p>
+              </div>
+              <div class="text-wrapper">
+                <h3 class="mbr-section-title mbr-fonts-style mb-4 display-2">
+                    <strong>Experienced Experts </strong>
+                </h3>
+                <p class="mbr-text mbr-fonts-style mb-4 display-7"> With years of experience we make it our mission to provide seamless service at every stage of your project. Trusted with quality, you can sit back knowing you are getting your desired look, guaranteed to last. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section style="background-color: #fff; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif; color:#aaa; font-size:12px; padding: 0; align-items: center; display: flex;">
+        <a href="https://mobirise.site/" style="flex: 1 1; height: 3rem; padding-left: 1rem; display: none;"></a>
+      </section>
+      <section id="gallerysection">
+        <div class="container-fluid">
+          <h3 class="mbr-section-title mbr-fonts-style mb-4 display-2">
+                    <strong>Check Out Our Gallery! </strong>
+                </h3>
+          <div class="row">
+            <div class="col-md-4">
+              <a data-fancybox="gallery" href="assets/images/IMG_1525.jpg"><img src="assets/images/IMG_1525.jpg"></a>
+              <br><br>
+                  <a data-fancybox="gallery" href="assets/images/IMG_1524.jpg"><img src="assets/images/IMG_1524.jpg"></a>
+            </div>
+            <div class="col-md-4">
+              <a data-fancybox="gallery" href="assets/images/IMG_1516.jpg"><img src="assets/images/IMG_1516.jpg"></a><br><br>
+                  <a data-fancybox="gallery" href="assets/images/IMG_4421.jpg"><img src="assets/images/IMG_4421.jpg"></a>
+            </div>
+            <div class="col-md-4">
+              <a data-fancybox="gallery" href="assets/images/IMG_1512.jpg"><img src="assets/images/IMG_1512.jpg"></a><br><br>
+                  <a data-fancybox="gallery" href="assets/images/B7A8941A-2D1E-4798-9D7E-37F4B1FF6B90.JPG"><img src="assets/images/B7A8941A-2D1E-4798-9D7E-37F4B1FF6B90.JPG"></a>
+            </div>
+          </div>
+          <br>
+          <br>
+
+
+        </div>
+      </section>
+      <div class="container-fluid">
+        <section class="custom-footer">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-5">
+                <div class="outer-info-card">
+                  <div class="info-card">
+                    <p class="mbr-text mbr-fonts-style display-7" style="font-size:13pt;opacity: 0.8"> We have been serving the Ottawa Region for over 30 years!
+                      <br>
+                      <br> How Can We Help?
+                      <br> <a href="mailto:info@falconconstruction.ca">info@falconconstruction.ca</a>
+                      <br> (613) 219-5640
+                      <br>
+                      <br>
+                      <br> Our mailing address:
+                      <br> Stret Number / Address,
+                      <br> Ottawa, ON Postal Code </p>
+                  </div>
+                  <br>
+                  <br>
+                  <div class="footer-bottom">
+                    <p class="mbr-text mbr-fonts-style display-7"> Falcon Construction &copy;
+                      <script>
+                        document.write(new Date().getFullYear())
+                      </script>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              
+<!--              <div class="col-md-1"></div>-->
+              <div class="col-md-6">
+                <p class="mbr-text mbr-fonts-style mb-4 display-7" style="color:white !important; margin: 0;
+  position: absolute;
+  top: 40%;
+                                                                        padding-left: 25px; padding-right: 25px;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);">Falcon Construction is acknowledged for our quality work and we take pride in ensuring every aspect of our clients visions are met. For over 30 years, our dedication and attention to detail, mirror the quality of work our clients expect in their home. Our team of experts are excited to assist you on your next project.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <script src="assets/web/assets/jquery/jquery.min.js"></script>
+      <script src="assets/popper/popper.min.js"></script>
+      <script src="assets/tether/tether.min.js"></script>
+      <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+      <script src="assets/smoothscroll/smooth-scroll.js"></script>
+      <script src="assets/bootstrapcarouselswipe/bootstrap-carousel-swipe.js"></script>
+      <script src="assets/mbr-testimonials-slider/mbr-testimonials-slider.js"></script>
+      <script src="assets/theme/js/script.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" type="text/javascript"></script>
+      <script src="https://daks2k3a4ib2z.cloudfront.net/56711e3c355c811d4dcd9061/js/l-a.f9d498c3b.js" type="text/javascript"></script>
   </body>
+
 </html>

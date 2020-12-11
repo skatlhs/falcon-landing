@@ -1,0 +1,257 @@
+@import url(https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap);
+.topSection {
+  margin-top: -30px;
+}
+
+li.indicator-custom-class {
+  height: 10px;
+  width: 10px;
+  border-radius: 100% !important;
+  position: relative;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.carousel-indicators {
+  text-align: right;
+  float: right;
+  right: -10% !important;
+  left: inherit;
+  width: 100px !important;
+  top: 75vh !important;
+}
+
+.indicator-left {
+  text-align: left !important;
+  float: left;
+  left: -12% !important;
+  right: inherit;
+  width: auto;
+  !important;
+  color: rgba(255, 255, 255, 0.44);
+  width: 300px !important;
+  display: block;
+  top: 77vh !important;
+}
+
+.carousel-caption {
+  left: 30px;
+  bottom: 25vh;
+  width: 90vh;
+  font-size: 40pt;
+  text-align: start;
+      font-family: 'Crete Round', serif;
+  letter-spacing: 2px;
+  /*
+  background: rgba(0, 0, 0, 0.28);
+  padding: 4px;
+*/
+/*  text-shadow: 2px 2px rgba(0, 0, 0, 0.46);*/
+}
+
+.outline-button {
+  border: 1px solid black;
+  color: black;
+  border-radius: 0px !important;
+  transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+  margin-left: 0;
+}
+
+.outline-button:hover {
+  color: white;
+  background-color: black;
+  transition: all .3s ease;
+  -webkit-transition: all .3s ease;
+}
+
+.custom-footer {
+  height: 70vh;
+  background-image: url(assets/images/maps.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding-top: 0px;
+  padding-left: 10vh;
+  margin-top: 70px;
+  margin-bottom: 65px;
+}
+
+.bottom-footer-secondary {
+  height: 70vh;
+  background: url(assets/images/all-black.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-bottom: 65px;
+}
+
+.display-7 {
+  font-weight: 300;
+  position: relative;
+  top: -20px;
+}
+
+.mbr-section-title {
+  font-size: 25pt !important;
+    font-family: 'Jost' !important;
+/*  font-family: 'Crete Round', serif;*/
+}
+
+.info-card {
+  background-image: linear-gradient(#f9faff, #e8edff);
+  border-radius: 0px;
+  padding: 40px;
+  padding-top: 80px;
+}
+
+.footer-bottom {
+  color: #838383;
+  padding-left: 10px;
+}
+
+.footer-bottom p {
+  font-size: 10pt !important;
+}
+
+.separator {
+  width: 70%;
+  border-top: 1px solid rgba(249, 253, 255, 0.1);
+  bottom: 10px;
+  position: relative;
+}
+
+#customnav {
+  background-color: #ffffff;
+  position: fixed;
+  top: -100px;
+  width: 100%;
+  transition: top 0.3s;
+  z-index: 9999;
+  /*
+  padding-left: 100px;
+  padding-right: 100px;
+*/
+  box-shadow: none;
+}
+
+#customnav img {
+  width: 170px;
+}
+
+#customnav a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  transition: all 0.3s;
+  font-weight: 100;
+  letter-spacing: 2px;
+  font-size: 11pt;
+}
+
+#customnav a:hover {
+  text-decoration: none;
+  transition: all 0.3s;
+  background: rgba(0, 0, 0, 0.06);
+}
+
+#innernav {
+  background-color: rgba(255, 0, 0, 0);
+  top: 75px;
+  width: 100%;
+  transition: top 0.3s;
+  z-index: 99;
+  /*
+  padding-left: 100px;
+  padding-right: 100px;
+*/
+}
+
+#innernav a {
+  color: rgba(255, 255, 255, 0.63);
+  transition: all 0.3s;
+  text-decoration: none;
+  font-weight: 100;
+  letter-spacing: 2px;
+  font-size: 11pt;
+}
+
+#innernav a:hover {
+  color: rgb(255, 255, 255);
+  transition: all 0.3s;
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.17);
+}
+
+#innernav img {
+  width: 170px;
+}
+
+.carousel-link {
+  color: rgba(255, 255, 255, 0.32);
+  transition: all .3s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.carousel-link:hover {
+  color: rgb(255, 255, 255);
+  transition: all .3s ease;
+}
+
+img.topcapimg {
+  height: 85vh;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  object-fit: cover !important;
+}
+
+
+.social-section {
+  text-align: center;
+  position: relative;
+  bottom: 40px;
+}
+
+.outer-info-card {
+  padding: 70px 0;
+}
+
+@media screen and (max-width:667px) {
+  .topSection {
+    padding-top: 20px;
+  }
+  .carousel-caption {
+    width: 90%;
+    top: 15vh;
+    /*        display: none;*/
+    font-size: 20pt;
+    padding: 70px 0;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.46);
+    
+  }
+  #customnav {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  #innernav {
+    display: none;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .custom-footer {
+    padding-left: 0;
+  }
+  .navbar-toggler {
+    background-color: rgba(0, 0, 0, 0.14) !important;
+    position: relative;
+    top: 30px;
+  }
+  #customnav a {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+  img.topcapimg {
+    height: 400px;
+  }
+}
